@@ -53,7 +53,7 @@ jobs:
       # Create compile_commands.json for the indexer: Debug build type is needed
       # to index code behind #ifndef NDEBUG and enable assertions. At this point
       # all source files were generated and all we need is new
-      # compile_commands.json.
+      # compile_commands.json. test
       - name: Generate compile_commands
         run: >
           cmake -G Ninja -S llvm-project/llvm -B ${{ env.CMAKE_BUILD_DIR }}
